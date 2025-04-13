@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  background-color: #d0d1d3;
+  background: url(https://picsum.photos/1920/1080) center center no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 4rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-family: "Times New Roman", Times, serif;
+}
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+footer .links {
+  margin-bottom: 50px;
+}
+
+footer .links > a {
+  color: #636b6f;
+  padding: 0 25px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+footer .links > a:hover {
+  color: #0085a1;
+  text-decoration: underline;
+}
+
+.copyright {
+  color: rgb(108, 117, 125);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.news {
+  background-color: #fff;
+  padding: 50px 0 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+article {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto 32px;
+  padding: 16px 15px;
+  border-bottom: 1px solid rgb(128, 128, 128);
+  box-sizing: border-box;
+}
+
+/* Стиль для чётных новостей */
+article:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+article a {
+  color: rgb(33, 37, 41);
+  text-decoration: none;
+}
+
+article a:hover {
+  color: #0085a1;
+}
+
+/* Добавляем "New" к заголовкам первых двух новостей */
+article:nth-child(1) h2::after,
+article:nth-child(2) h2::after {
+  content: " New";
+  color: #e74c3c;
+  font-size: 0.7em;
+  vertical-align: super;
+  margin-left: 5px;
+}
+
+article h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 5px;
+}
+
+.article-meta {
+  color: rgb(134, 142, 150);
+  margin-bottom: 15px;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.source-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0085a1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.source-link:hover {
+  text-decoration: underline;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  header {
+    height: 300px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  article {
+    padding: 10px;
+  }
+
+  footer .links > a {
+    padding: 0 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    height: 200px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  footer .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .links > a {
+    margin-bottom: 15px;
+  }
+}
