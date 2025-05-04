@@ -4,7 +4,7 @@
 
 ## Ссылка на сайт
 
-[БыстроНовости](https://iginov.ru/portfolio/fast-news/)
+[Fast News](https://iginov.ru/portfolio/fast-news/)
 
 ## Описание проекта
 
